@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    color: #fcffff;
+}
+
+p {
+    font-size: 14px;
+    color: #6e7480;
+    font-weight: 500;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141519;
+}
+
+.container .rating-part {
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #1e252f;
+    border-radius: 30px;
+}
+
+.container .rating-part #star {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #272e34;
+}
+
+.container .rating-part .ratings {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .rating-part .ratings .rating {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #272e38;
+    color: #6e7480;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container .rating-part .ratings .rating:hover {
+    background-color: #7c8896;
+    color: #ffffff;
+}
+
+.container .rating-part #submit-btn {
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fa7614;
+    color: #fce9bf;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.container .rating-part #submit-btn:hover {
+    background-color: #fcffff;
+    color: #fa7614;
+}
