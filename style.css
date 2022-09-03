@@ -90,3 +90,28 @@ p {
     background-color: #fcffff;
     color: #fa7614;
 }
+
+.container .thank-you-part {
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1e252f;
+    border-radius: 30px;
+}
+
+.container .thank-you-part .rated-value {
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: #262e38;
+    color: #fa7614;
+    font-weight: 300;
+}
+
+.container .thank-you-part > p {
+    text-align: center;
+    font-size: 14px;
+}

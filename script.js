@@ -1,6 +1,9 @@
 // DOM Elements
+const ratingPartElement = document.querySelector(".rating-part");
 const ratingsElement = document.querySelectorAll(".rating");
 const submitButtonElement = document.getElementById("submit-btn");
+const thankYouPartElement = document.querySelector(".thank-you-part");
+const ratedValueElement = document.querySelector(".rated-value");
 
 // Global Variables
 let value = null;
@@ -13,7 +16,10 @@ ratingsElement.forEach((rating) => {
 });
 
 submitButtonElement.addEventListener("click", () => {
-    console.log(value);
+    ratingPartElement.style.display = "none";
+    thankYouPartElement.style.display = "flex";
+
+    ratedValueElement.innerText = `You selected ${value} out of 5`;
 });
 
 // Functions
