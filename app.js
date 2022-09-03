@@ -1,0 +1,3 @@
+function ratingPanel(){
+    document.write("");
+}
