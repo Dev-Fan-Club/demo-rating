@@ -1,22 +1,82 @@
 body{
     background-color: #141519;
-    
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
 .container{
     text-align: center;
-    display: grid;
+    display: flex;
     height: 100vh;
     align-items: center;
 }
 
-#pop-up{
-    background-color: rgb(62, 185, 62);
-    font-weight: bold;
-    color: gold;
-    border: 2px;
-    margin: auto;
-    padding: 15px;
-    border-radius: 3px;
+.rating{
+    background-color: #1F2630;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
+.btn-group ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 2rem;
+    list-style-type: none;
+}
+
+.btn-group ul li button{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color:hsl(223, 20%, 22%);
+    color: #fff;
+    padding-top: 0.2rem;
+    border-radius: 50%;
+}
+
+.thanks
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.thanks img
+{
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.thanks p.c-garay
+{
+    background-color:hsl(213, 20%, 22%);
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    display: inline-block;
+    text-align: center;
+    padding: .2rem .5rem 0;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.thanks h2
+{
+    color: #fff;
+    margin-bottom: 1rem;
+
+}
+
+.thanks p
+{
+    color: hsl(217, 12%, 63%);
+}
+
+.hidden{
+    display: none;
+}

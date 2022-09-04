@@ -11,7 +11,40 @@
 <body>
     <div class="container">
         <div class="rating">
-            <button id="pop-up" onclick="ratingPanel()"><i class="fa fa-star"></i></i> Rate us</button>
+            <div class="content">
+                <div class="star-icon">
+                   <img src="./design/icon-star.svg" alt="image">                  
+               </div>
+               <div class="description">
+                   <h1 class="rating-card__title">How did we do?</h1>
+                   <p class="rating-card__description">
+                   Please let us know how we did with your 
+                   support request. All feedback
+                   is appreciated to help us improve our offering!
+                 </p>
+               </div>
+               
+               <div class="btn-group">
+                 <ul>
+                    <li><button class="btn">1</button></li>
+                    <li><button class="btn">2</button></li>
+                    <li><button class="btn">3</button></li>
+                    <li><button class="btn">4</button></li>
+                    <li><button class="btn">5</button></li>
+                 </ul>
+               </div>
+            <button class="btn-submit" id="submit">Submit</button>
+           </div>
+        </div>
+        <div class="thanks hidden">
+            <img src="./design/illustration-thank-you.svg" alt="">
+            <p class="c-garay">You selected out of 5</p>
+            <h2>Thank you!</h2>
+          
+             <p>
+             We appreciate you taking the time to give a rating. If you ever need
+             more support, don’t hesitate to get in touch!
+             </p>
         </div>
         
     </div>
