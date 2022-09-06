@@ -87,12 +87,12 @@ p{
 
  .btn-group ul li button:hover
  {
-    background-color:hsl(25, 97%, 53%);
+    background-color:hsl(217, 12%, 63%);
  }
 
  .btn-group ul li button:focus
  {
-    background-color:hsl(217, 12%, 63%);
+    background-color:hsl(25, 97%, 53%);
  }
 
 .btn-submit
