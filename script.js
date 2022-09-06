@@ -9,7 +9,7 @@ const ratedValueElement = document.querySelector(".rated-value");
 let value = null;
 
 // Event Listners
-ratingsElement.forEach((rating) => {
+ratingsElement.forEach(rating => {
     rating.addEventListener("click", () => {
         ratingHandler(rating);
     });
@@ -25,7 +25,7 @@ submitButtonElement.addEventListener("click", () => {
 // Functions
 // Clears previously selected rating
 function clearPreviousRating(currentRating) {
-    ratingsElement.forEach((rating) => {
+    ratingsElement.forEach(rating => {
         if (rating.innerText !== currentRating) {
             rating.style.backgroundColor = "#272e38";
             rating.style.color = "#6e7480";
@@ -36,8 +36,8 @@ function clearPreviousRating(currentRating) {
 // Handles the rate buttons
 function ratingHandler(rating) {
     value = rating.innerText;
-    rating.style.backgroundColor = "#fa7614";
-    rating.style.color = "#fff";
+    rating.classList.remove("rating");
+    rating.classList.add("rating-click-effect");
 
     // Clear previous rating, if selected
     clearPreviousRating(value);
